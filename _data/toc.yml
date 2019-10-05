@@ -50,7 +50,7 @@
   expand_sections: true
   sections:
   - title: データ分析のフロー
-    url: /analysis/data-flow
+    url: /analysis/data-analysis-flow
     not_numbered: true
 - title: Tips
   url: /tips/readme
