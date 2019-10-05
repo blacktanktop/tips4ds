@@ -69,17 +69,17 @@
       not_numbered: true
   sections:
   - title: 分析再現性のための環境構築ツール
-    url: /tips/build-environment/readme
+    url: /tips/environment/readme
     not_numbered: true
     subsections:
     - title: renv
-      url: /tips/build-environment/renv
+      url: /tips/environment/renv
       not_numbered: true
     - title: pyenv
-      url: /tips/build-environment/pyenv
+      url: /tips/environment/pyenv
       not_numbered: true
     - title: docker
-      url: /tips/build-environment/docer
+      url: /tips/environment/docer
       not_numbered: true
   sections:
   - title: tidy preprocess
