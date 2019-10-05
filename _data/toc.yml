@@ -28,25 +28,110 @@
 
 # External link
 - title: GitHub repository
-  url: https://github.com/jupyter/jupyter-book
+  url: https://github.com/blacktanktop/tips4ds
   external: true
   not_numbered: true
 
 # Adds a searchbar link
 - title: Search
   search: true
+  not_numbered: true
 
 # Divider for meta-pages and content page
 - divider: true
 
 # Add a header and sample content section
-- header: Demo textbook
+- header: データ分析に関わるノウハウ・メモ
 
 # A chapter w/ a collection of sections beneath it
-- title: Features and customization
-  url: /features/features
+- title: データ分析について
+  url: /analysis/readme
   not_numbered: true
   expand_sections: true
+  sections:
+  - title: データ分析のフロー
+    url: /analysis/data-flow
+    not_numbered: true
+- title: Tips
+  url: /tips/readme
+  not_numbered: true
+  expand_sections: true
+  sections:
+  - title: Linux環境での作業
+    url: /tips/linux/readme
+    not_numbered: true
+    subsections:
+    - title: 基本コマンド
+      url: /tips/linux/basic
+      not_numbered: true
+    - title: 作業しやすくする
+      url: /tips/linux/convenient
+      not_numbered: true
+  sections:
+  - title: 分析再現性のための環境構築ツール
+    url: /tips/build-environment/readme
+    not_numbered: true
+    subsections:
+    - title: renv
+      url: /tips/build-environment/renv
+      not_numbered: true
+    - title: pyenv
+      url: /tips/build-environment/pyenv
+      not_numbered: true
+    - title: docker
+      url: /tips/build-environment/docer
+      not_numbered: true
+  sections:
+  - title: tidy preprocess
+    url: /tips/preprocess/readme
+    not_numbered: true
+    subsections:
+    - title: tidyr
+      url: /tips/preprocess/tidyr
+      not_numbered: true
+    - title: purrr
+      url: /tips/preprocess/purrr
+      not_numbered: true
+  sections:
+  - title: tidy modeling
+    url: /tips/modeling/readme
+    not_numbered: true
+    subsections:
+    - title: rsample
+      url: /tips/modeling/rsample
+      not_numbered: true
+    - title: recipes
+      url: /tips/modeling/recipes
+      not_numbered: true
+    - title: parsnip
+      url: /tips/modeling/parsnip
+      not_numbered: true
+    - title: yardstick
+      url: /tips/modeling/yardstick
+      not_numbered: true
+    - title: Cross validation
+      url: /tips/modeling/cv
+      not_numbered: true
+    - title: Hyperparameter optimization
+      url: /tips/modeling/hyperparameter-optimization
+      not_numbered: true
+  sections:
+  - title: 可視化
+    url: /tips/visualization/readme
+    not_numbered: true
+    subsections:
+    - title: ggplot2
+      url: /tips/visualization/ggplot2
+      not_numbered: true
+  sections:
+  - title: Rとpython
+    url: /tips/r-python-compatible/readme
+    not_numbered: true
+    subsections:
+    - title: tidyverse vs pandas
+      url: /tips/r-python-compatible/tidy-pandas
+      not_numbered: true
+
   sections:
   - title: Markdown files
     url: /features/markdown
