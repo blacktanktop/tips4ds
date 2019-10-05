@@ -124,12 +124,12 @@
       url: /tips/visualization/ggplot2
       not_numbered: true
   sections:
-  - title: Rとpython
+  - title: RとPython
     url: /tips/r-python-compatible/readme
     not_numbered: true
     subsections:
     - title: tidyverse vs pandas
-      url: /tips/r-python-compatible/tidy-pandas
+      url: /tips/r-python-compatible/tidyverse-pandas
       not_numbered: true
 
   sections:
