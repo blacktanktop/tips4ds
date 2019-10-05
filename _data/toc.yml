@@ -79,7 +79,7 @@
       url: /tips/environment/pyenv
       not_numbered: true
     - title: docker
-      url: /tips/environment/docer
+      url: /tips/environment/docker
       not_numbered: true
   sections:
   - title: tidy preprocess
