@@ -1,6 +1,14 @@
-# Books with Jupyter and Jekyll
+# Tips for Data Science
 
 <img src="https://circleci.com/gh/jupyter/jupyter-book.svg?style=svg" class="left">
+
+## はじめに
+
+### 著者
+
+くろたんく
+Twitter : [@black_tank_top](https://twitter.com/black_tank_top)
+Blog : [くろたんくブログ](https://blog.blacktanktop.me)
 
 Jupyter Books lets you build an online book using a collection of Jupyter Notebooks
 and Markdown files. Its output is similar to the excellent [Bookdown](https://bookdown.org/yihui/bookdown/) tool,
