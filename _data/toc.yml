@@ -32,11 +32,6 @@
   external: true
   not_numbered: true
 
-# Adds a searchbar link
-- title: Search
-  search: true
-  not_numbered: true
-
 # Divider for meta-pages and content page
 - divider: true
 
