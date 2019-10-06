@@ -20,48 +20,69 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Tips-for-Data-Science">Tips for Data Science<a class="anchor-link" href="#Tips-for-Data-Science"> </a></h1><p><img src="https://circleci.com/gh/jupyter/jupyter-book.svg?style=svg" class="left"></p>
-<h2 id="&#12399;&#12376;&#12417;&#12395;">&#12399;&#12376;&#12417;&#12395;<a class="anchor-link" href="#&#12399;&#12376;&#12417;&#12395;"> </a></h2><h3 id="&#33879;&#32773;">&#33879;&#32773;<a class="anchor-link" href="#&#33879;&#32773;"> </a></h3><p>くろたんく
-Twitter : <a href="https://twitter.com/black_tank_top">@black_tank_top</a>
-Blog : <a href="https://blog.blacktanktop.me">くろたんくブログ</a></p>
-<p>Jupyter Books lets you build an online book using a collection of Jupyter Notebooks
-and Markdown files. Its output is similar to the excellent <a href="https://bookdown.org/yihui/bookdown/">Bookdown</a> tool,
-and adds extra functionality for people running a Jupyter stack.</p>
-<p>For an example of a book built with Jupyter Books, see the <a href="https://www.textbook.ds100.org/">textbook for Data 100</a> at UC Berkeley.</p>
-<p>Here are a few features of Jupyter Books</p>
+<h2 id="&#12399;&#12376;&#12417;&#12395;">&#12399;&#12376;&#12417;&#12395;<a class="anchor-link" href="#&#12399;&#12376;&#12417;&#12395;"> </a></h2><p>データ分析と言われて思い浮かべるのは、その人の職種によってまちまちだと思います。
+私が行なっていることや知り合いとの話を統合すると企業によりますが、データサイエンティストの仕事は以下のように多岐にわたります。</p>
+<p>プロジェクト的な内容としては、</p>
 <ul>
-<li>All course content is written in markdown and Jupyter Notebooks, stored in <code>notebooks/</code></li>
-<li>The Jupyter Book repo comes packaged with helper scripts to convert these into Jekyll pages (in <code>scripts/</code>) that can be hosted for free on GitHub</li>
-<li>Pages can have <a href="https://mybinder.org">Binder</a> or JupyterHub links automatically added for interactivity.</li>
-<li>The website itself is based on Jekyll, and is highly extensible and can be freely-hosted on GitHub.</li>
-<li>There are lots of nifty HTML features under-the-hood, such as Turbolinks fast-navigation and
-click-to-copy in code cells.</li>
+<li>プロジェクトマネージメント</li>
+<li>クライアントとの要件合わせ</li>
+<li>ビジネス課題を分析課題への落とし込む作業</li>
+<li>探索的データ分析</li>
+<li>仮説設定</li>
+<li>分析設計</li>
+<li>分析環境の構築</li>
+<li>いわゆる分析の本体として、集計・多変量解析・機械学習モデルの構築などの使い分け</li>
+<li>可視化</li>
+<li>資料のまとめ</li>
+<li>クライアントへの説明</li>
 </ul>
-<h2 id="Getting-started">Getting started<a class="anchor-link" href="#Getting-started"> </a></h2><p>To get started, you may be interested in the following links.
-Here are a few links of interest:</p>
+<p>技術・知識向上的な内容としては、</p>
 <ul>
-<li><p><strong><a href="features/features">Quickstart</a></strong> is a quick demo and overview of Jupyter Books.</p>
-</li>
-<li><p><strong><a href="guide/01_overview">The Jupyter Book Guide</a></strong>
-will step you through the process of configuring and building your own Jupyter Book.</p>
-</li>
-<li><p><strong><a href="https://github.com/jupyter/jupyter-book">The Jupyter Book template repo</a></strong> is the template
-repository you'll use as a start for your Jupyter Book.</p>
-</li>
-<li><p><strong>A demo of the Jupyter Book</strong> can be browsed via the sidebar to the left.</p>
-</li>
+<li>興味がある内容の調査</li>
+<li>新たなアルゴリズムや技術を把握するために論文を読む</li>
+<li>新しい便利なライブラリやパッケージの調査</li>
 </ul>
-<h2 id="Installation">Installation<a class="anchor-link" href="#Installation"> </a></h2><p>Here's a brief rundown of how to create your own Jupyter Book using this site. For a more
-complete guide, see <a href="guide/01_overview">the Jupyter Book guide</a>.</p>
+<p>などがあげられます。もちろん他にも色々あると思います。
+むしろ最近は細分化しており、データアナリスト・データサイエンティスト・データエンジニアといったように仕事が切り分けられている印象があります。
+しかし、個人的には、基本的に一人でもある程度のレベルで上記にあげた内容はこなせるようになってほしいと思っています。</p>
+<p>本書の目的は、企業のデータサイエンスに関わるノウハウをある程度体系的にまとめることを目指します。
+これらの中でも、いわゆる分析の外側にある内容のTipsを示しながら、何に気を配るべきなのか、どのように学習するべきなのかに重点をおきます。
+これを読み実践することで、学習する方法を学び、最終的に、全ての内容について一人でもこなせるようになることを目的とします。</p>
+<p>さらに、私自身へのメモとして、直近で使えそうなツールについてはコマンドのメモを残します。</p>
+<h2 id="&#12371;&#12398;&#25991;&#31456;&#12395;&#12388;&#12356;&#12390;">&#12371;&#12398;&#25991;&#31456;&#12395;&#12388;&#12356;&#12390;<a class="anchor-link" href="#&#12371;&#12398;&#25991;&#31456;&#12395;&#12388;&#12356;&#12390;"> </a></h2><ul>
+<li>企業でデータサイエンティストとして働きながら得た、データサイエンスに関わるノウハウやメモをJupyter Bookに変換したものです。 </li>
+<li>データサイエンスに関わる、様々な情報を私なりに解釈したり、実際に試した上で便利と感じたものを書き綴っています。ある程度内容を整理していますが、メモ的に書いてあり説明が足りない部分もあります。</li>
+<li>この文章は執筆時点での情報です。特に技術的な内容に関しては比較的更新が多い内容も含まれるため、すでに私が使っていなかったり、使い方が変更されたりしていることがあります。</li>
+</ul>
+<h3 id="&#24819;&#23450;&#12375;&#12390;&#12356;&#12427;&#23550;&#35937;&#12398;&#35501;&#32773;">&#24819;&#23450;&#12375;&#12390;&#12356;&#12427;&#23550;&#35937;&#12398;&#35501;&#32773;<a class="anchor-link" href="#&#24819;&#23450;&#12375;&#12390;&#12356;&#12427;&#23550;&#35937;&#12398;&#35501;&#32773;"> </a></h3><p>基本的に、駆け出しのデータサイエンティストや実務経験が少ないデータサイエンティストになります。</p>
+<p>例えば、</p>
 <ul>
-<li>Fork the Jupyter Book template repo</li>
-<li>Replace the demo notebooks in <code>content/</code> with your own notebooks and markdown files.</li>
-<li>Create a Table of Contents yaml file by editing <code>_data/toc.yaml</code>.</li>
-<li>Generate the Jekyll markdown for your notebooks by running <code>scripts/generate_book.py</code></li>
-<li>Push your changes to GitHub (or wherever you host your site)!</li>
+<li>データサイエンティストになり始めて、いろんなことを学びたい人</li>
+<li>エンジニア力が足りないと感じていて、何から手をつけていいかわからない人</li>
+<li>ソフトスキルに自身がない人</li>
 </ul>
-<h2 id="Acknowledgements">Acknowledgements<a class="anchor-link" href="#Acknowledgements"> </a></h2><p>Jupyter Books was originally created by <a href="http://www.samlau.me/">Sam Lau</a> and <a href="https://predictablynoisy.com">Chris Holdgraf</a>
-with support of the <strong>UC Berkeley Data Science Education Program and the Berkeley
-Institute for Data Science</strong>.</p>
+<p>反対に、対象としない読者は、基本的に、全体的に幅広くやりたくない人とすでにできる人になります。</p>
+<p>例えば、</p>
+<ul>
+<li>自分は、優れた機械学習モデリング能力があるから、クライアントとは話さないのだと思っている人</li>
+<li>自身が出した結果を理解できない人はわからないままでいいと思っている人</li>
+<li>まだ初心者だから、環境は用意されたものしか使う気がないと思っている人</li>
+<li>新たなことを自習したくないと思っている人</li>
+</ul>
+<h2 id="&#26360;&#12367;&#12371;&#12392;&#12522;&#12473;&#12488;">&#26360;&#12367;&#12371;&#12392;&#12522;&#12473;&#12488;<a class="anchor-link" href="#&#26360;&#12367;&#12371;&#12392;&#12522;&#12473;&#12488;"> </a></h2><ul>
+<li>データ分析のフロー</li>
+<li>データサイエンスに関わるソフトスキル</li>
+<li>環境構築について</li>
+<li>分析再現性について</li>
+<li>tidyverseおよびtidymodelsのコマンドのメモ</li>
+<li>その他技術的なTips</li>
+</ul>
+<h2 id="&#21462;&#12426;&#25201;&#12431;&#12394;&#12356;&#20869;&#23481;">&#21462;&#12426;&#25201;&#12431;&#12394;&#12356;&#20869;&#23481;<a class="anchor-link" href="#&#21462;&#12426;&#25201;&#12431;&#12394;&#12356;&#20869;&#23481;"> </a></h2><ul>
+<li>機械学習や深層学習の解説</li>
+<li>具体的なアルゴリズムの解説</li>
+</ul>
+<h2 id="&#12381;&#12398;&#20182;">&#12381;&#12398;&#20182;<a class="anchor-link" href="#&#12381;&#12398;&#20182;"> </a></h2><h3 id="&#33879;&#32773;">&#33879;&#32773;<a class="anchor-link" href="#&#33879;&#32773;"> </a></h3><p>くろたんく（Twitter : <a href="https://twitter.com/black_tank_top">@black_tank_top</a> Blog : <a href="https://blog.blacktanktop.me">くろたんくブログ</a>）</p>
+<h3 id="&#12521;&#12452;&#12475;&#12531;&#12473;">&#12521;&#12452;&#12475;&#12531;&#12473;<a class="anchor-link" href="#&#12521;&#12452;&#12475;&#12531;&#12473;"> </a></h3><p>CC BY-NC-ND 4.0</p>
 
 </div>
 </div>

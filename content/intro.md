@@ -4,58 +4,82 @@
 
 ## はじめに
 
+データ分析と言われて思い浮かべるのは、その人の職種によってまちまちだと思います。
+私が行なっていることや知り合いとの話を統合すると企業によりますが、データサイエンティストの仕事は以下のように多岐にわたります。
+
+プロジェクト的な内容としては、
+* プロジェクトマネージメント
+* クライアントとの要件合わせ
+* ビジネス課題を分析課題への落とし込む作業
+* 探索的データ分析
+* 仮説設定
+* 分析設計
+* 分析環境の構築
+* いわゆる分析の本体として、集計・多変量解析・機械学習モデルの構築などの使い分け
+* 可視化
+* 資料のまとめ
+* クライアントへの説明
+
+技術・知識向上的な内容としては、
+* 興味がある内容の調査
+* 新たなアルゴリズムや技術を把握するために論文を読む
+* 新しい便利なライブラリやパッケージの調査
+
+などがあげられます。もちろん他にも色々あると思います。
+むしろ最近は細分化しており、データアナリスト・データサイエンティスト・データエンジニアといったように仕事が切り分けられている印象があります。
+しかし、個人的には、基本的に一人でもある程度のレベルで上記にあげた内容はこなせるようになってほしいと思っています。
+
+本書の目的は、企業のデータサイエンスに関わるノウハウをある程度体系的にまとめることを目指します。
+これらの中でも、いわゆる分析の外側にある内容のTipsを示しながら、何に気を配るべきなのか、どのように学習するべきなのかに重点をおきます。
+これを読み実践することで、学習する方法を学び、最終的に、全ての内容について一人でもこなせるようになることを目的とします。
+
+さらに、私自身へのメモとして、直近で使えそうなツールについてはコマンドのメモを残します。
+
+
+## この文章について
+
+* 企業でデータサイエンティストとして働きながら得た、データサイエンスに関わるノウハウやメモをJupyter Bookに変換したものです。 
+* データサイエンスに関わる、様々な情報を私なりに解釈したり、実際に試した上で便利と感じたものを書き綴っています。ある程度内容を整理していますが、メモ的に書いてあり説明が足りない部分もあります。
+* この文章は執筆時点での情報です。特に技術的な内容に関しては比較的更新が多い内容も含まれるため、すでに私が使っていなかったり、使い方が変更されたりしていることがあります。
+
+### 想定している対象の読者
+
+基本的に、駆け出しのデータサイエンティストや実務経験が少ないデータサイエンティストになります。
+
+例えば、
+* データサイエンティストになり始めて、いろんなことを学びたい人
+* エンジニア力が足りないと感じていて、何から手をつけていいかわからない人
+* ソフトスキルに自身がない人
+
+反対に、対象としない読者は、基本的に、全体的に幅広くやりたくない人とすでにできる人になります。
+
+例えば、
+* 自分は、優れた機械学習モデリング能力があるから、クライアントとは話さないのだと思っている人
+* 自身が出した結果を理解できない人はわからないままでいいと思っている人
+* まだ初心者だから、環境は用意されたものしか使う気がないと思っている人
+* 新たなことを自習したくないと思っている人
+
+## 書くことリスト
+
+* データ分析のフロー
+* データサイエンスに関わるソフトスキル
+* 環境構築について
+* 分析再現性について
+* tidyverseおよびtidymodelsのコマンドのメモ
+* その他技術的なTips
+
+## 取り扱わない内容
+
+* 機械学習や深層学習の解説
+* 具体的なアルゴリズムの解説
+
+
+## その他 
+
 ### 著者
 
-くろたんく
-Twitter : [@black_tank_top](https://twitter.com/black_tank_top)
-Blog : [くろたんくブログ](https://blog.blacktanktop.me)
+くろたんく（Twitter : [@black_tank_top](https://twitter.com/black_tank_top) Blog : [くろたんくブログ](https://blog.blacktanktop.me)）
 
-Jupyter Books lets you build an online book using a collection of Jupyter Notebooks
-and Markdown files. Its output is similar to the excellent [Bookdown](https://bookdown.org/yihui/bookdown/) tool,
-and adds extra functionality for people running a Jupyter stack.
+### ライセンス
 
-For an example of a book built with Jupyter Books, see the [textbook for Data 100](https://www.textbook.ds100.org/) at UC Berkeley.
-
-Here are a few features of Jupyter Books
-
-* All course content is written in markdown and Jupyter Notebooks, stored in `notebooks/`
-* The Jupyter Book repo comes packaged with helper scripts to convert these into Jekyll pages (in `scripts/`) that can be hosted for free on GitHub
-* Pages can have [Binder](https://mybinder.org) or JupyterHub links automatically added for interactivity.
-* The website itself is based on Jekyll, and is highly extensible and can be freely-hosted on GitHub.
-* There are lots of nifty HTML features under-the-hood, such as Turbolinks fast-navigation and
-  click-to-copy in code cells.
-
-## Getting started
-
-To get started, you may be interested in the following links.
-Here are a few links of interest:
-
-* **[Quickstart](features/features)** is a quick demo and overview of Jupyter Books.
-
-* **[The Jupyter Book Guide](guide/01_overview)**
-  will step you through the process of configuring and building your own Jupyter Book.
-
-* **[The Jupyter Book template repo](https://github.com/jupyter/jupyter-book)** is the template
-  repository you'll use as a start for your Jupyter Book.
-
-* **A demo of the Jupyter Book** can be browsed via the sidebar to the left.
-
-## Installation
-
-Here's a brief rundown of how to create your own Jupyter Book using this site. For a more
-complete guide, see [the Jupyter Book guide](guide/01_overview).
-
-* Fork the Jupyter Book template repo
-* Replace the demo notebooks in `content/` with your own notebooks and markdown files.
-* Create a Table of Contents yaml file by editing `_data/toc.yaml`.
-* Generate the Jekyll markdown for your notebooks by running `scripts/generate_book.py`
-* Push your changes to GitHub (or wherever you host your site)!
-
-## Acknowledgements
-
-Jupyter Books was originally created by [Sam Lau][sam] and [Chris Holdgraf][chris]
-with support of the **UC Berkeley Data Science Education Program and the Berkeley
-Institute for Data Science**.
-
-[sam]: http://www.samlau.me/
-[chris]: https://predictablynoisy.com
+CC BY-NC-ND 4.0
