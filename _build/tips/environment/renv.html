@@ -19,11 +19,38 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="renv">renv<a class="anchor-link" href="#renv"> </a></h1><p>Rのパッケージのバージョン管理は非常に難しいです。
+<h1 id="renv">renv<a class="anchor-link" href="#renv"> </a></h1><h2 id="R&#12398;&#12497;&#12483;&#12465;&#12540;&#12472;&#12398;&#12496;&#12540;&#12472;&#12519;&#12531;&#31649;&#29702;">R&#12398;&#12497;&#12483;&#12465;&#12540;&#12472;&#12398;&#12496;&#12540;&#12472;&#12519;&#12531;&#31649;&#29702;<a class="anchor-link" href="#R&#12398;&#12497;&#12483;&#12465;&#12540;&#12472;&#12398;&#12496;&#12540;&#12472;&#12519;&#12531;&#31649;&#29702;"> </a></h2><p>Rのパッケージのバージョン管理は非常に難しいです。
 というのも、システムで一元管理されているため、プロジェクトごとに切り分ける事が困難であるからです。</p>
-<p>とはいえ、パッケージのバージョン管理をきちんと行わないと、バージョンあげたり、他の環境になったりした時にコードが動かなくなる事があります。最近、RStudio本家からrenvというパッケージバージョン管理を行う事ができるパッケージが開発されています。</p>
-<p>以前まとめた資料が以下になります。</p>
-<script async class="speakerdeck-embed" data-id="2182379304ad4e72ae6aeef562e7173b" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<p>とはいえ、パッケージのバージョン管理をきちんと行わないと、バージョンあげたり、他の環境になったりした時にコードが動かなくなる事があります。では、どのようにすればパッケージのバージョン管理を上手にできるのかを次の章で書きます。</p>
+<h2 id="renv">renv<a class="anchor-link" href="#renv"> </a></h2><p>最近、RStudio本家から<a href="https://rstudio.github.io/renv/">renv</a>というパッケージバージョン管理を行う事ができるパッケージが開発されています。以前はPackratというパッケージがありましたが、少し使い勝手が悪かったです。</p>
+<p>renvのプロジェクトページにも以下のように書かれており、Packratに取って代わるパッケージとして開発が進められています。</p>
+<blockquote><p>The goal is for renv to be a robust, stable replacement for the Packrat package, with fewer surprises and better default behaviors.</p>
+</blockquote>
+<h2 id="&#20351;&#12356;&#26041;">&#20351;&#12356;&#26041;<a class="anchor-link" href="#&#20351;&#12356;&#26041;"> </a></h2><p>以前まとめた<a href="https://speakerdeck.com/black_tank_top/renv-version-control">資料</a>に基本的な使い方が書かれています。</p>
+<script async class="speakerdeck-embed" data-id="2182379304ad4e72ae6aeef562e7173b" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script><h2 id="&#12467;&#12510;&#12531;&#12489;">&#12467;&#12510;&#12531;&#12489;<a class="anchor-link" href="#&#12467;&#12510;&#12531;&#12489;"> </a></h2><p>基本的には、</p>
+<ol>
+<li>初期化</li>
+<li>必要なパッケージのインストール</li>
+<li>library(pkg)を書いて保存*1</li>
+<li>インストール状況の確認</li>
+<li>インストール状況を書き出し
+2~5を繰り返しながら作業する</li>
+</ol>
+<div class="highlight"><pre><span></span><span class="c1"># 初期化 (まっさらなRscriptを先に開いておく)</span>
+<span class="o">&gt;</span> <span class="n">renv</span><span class="o">::</span><span class="nf">init</span><span class="p">()</span>
+
+<span class="c1"># パッケージのインストール</span>
+<span class="o">&gt;</span> <span class="n">renv</span><span class="o">::</span><span class="nf">install</span><span class="p">(</span><span class="s">&quot;pkg&quot;</span><span class="p">)</span> 
+
+<span class="c1"># Rscriptにlibrary(&quot;pkg&quot;)と書いて保存する</span>
+
+<span class="c1"># インストール状況の確認</span>
+<span class="o">&gt;</span> <span class="n">renv</span><span class="o">::</span><span class="nf">status</span><span class="p">()</span>
+
+<span class="c1"># インストール状況をrenv.lockファイルに書き出す</span>
+<span class="o">&gt;</span> <span class="n">renv</span><span class="o">::</span><span class="nf">snapshot</span><span class="p">()</span>
+</pre></div>
+
 </div>
 </div>
 </div>
