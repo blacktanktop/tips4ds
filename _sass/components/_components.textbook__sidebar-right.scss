@@ -62,7 +62,9 @@ aside.sidebar__right {
     }
 }
 
-
+/*
+onthispageのiconのサイズのコントロール
+ */
 h4.nav__title {
     color: #7a8288;
     margin: 0;
@@ -71,6 +73,9 @@ h4.nav__title {
         'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;
     font-size: 0.8em;
     font-weight: bold;
+    img {
+        width: 15px;
+    }
 }
 
 ul.toc__menu {
