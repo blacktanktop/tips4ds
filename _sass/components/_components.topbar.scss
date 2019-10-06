@@ -27,7 +27,7 @@
       width: calc(100% - #{$right-sidebar-width} - 20px)
     }
   }
-
+/*
   .topbar-right-button {
     font-size: 1.4em;
     display: block;
@@ -37,6 +37,17 @@
 
     &:hover {
       color: $color-links;
+    }
+  }
+*/
+  .topbar-right-button {
+    display: block;
+    float: right;
+    padding: 0 1rem;
+
+    img {
+      width: 20px;
+      margin-top: 4px;
     }
   }
 }
