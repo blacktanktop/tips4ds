@@ -36,7 +36,7 @@
 - divider: true
 
 # Add a header and sample content section
-- header: データ分析のノウハウ・メモ
+- header: データ分析の技術的なTips
 
 # A chapter w/ a collection of sections beneath it
 - title: データ分析について
@@ -44,20 +44,20 @@
   not_numbered: true
   expand_sections: true
   sections:
-  - title: データ分析のフロー
+  - title: データ分析とは
     url: /analysis/data-analysis-flow
     not_numbered: true
-- title: ソフトスキルについて
-  url: /softskill/readme
-  not_numbered: true
-  expand_sections: true
-  sections:
-  - title: 批判的思考力
-    url: /softskill/critical-thinking
-    not_numbered: true
-  - title: コミュニケーション力
-    url: /softskill/communication
-    not_numbered: true
+    #- title: ソフトスキルについて
+    #  url: /softskill/readme
+    #  not_numbered: true
+    #  expand_sections: true
+    #  sections:
+    #  - title: 批判的思考力
+    #    url: /softskill/critical-thinking
+    #    not_numbered: true
+    #  - title: コミュニケーション力
+    #    url: /softskill/communication
+    #    not_numbered: true
 - title: 技術的なTips
   url: /tips/readme
   not_numbered: true
@@ -86,49 +86,49 @@
     - title: docker
       url: /tips/environment/docker
       not_numbered: true
-  - title: tidy preprocess
-    url: /tips/preprocess/readme
-    not_numbered: true
-    subsections:
-    - title: tidyr
-      url: /tips/preprocess/tidyr
-      not_numbered: true
-    - title: purrr
-      url: /tips/preprocess/purrr
-      not_numbered: true
-  - title: tidy modeling
-    url: /tips/modeling/readme
-    not_numbered: true
-    subsections:
-    - title: rsample
-      url: /tips/modeling/rsample
-      not_numbered: true
-    - title: recipes
-      url: /tips/modeling/recipes
-      not_numbered: true
-    - title: parsnip
-      url: /tips/modeling/parsnip
-      not_numbered: true
-    - title: yardstick
-      url: /tips/modeling/yardstick
-      not_numbered: true
-    - title: Cross validation
-      url: /tips/modeling/cv
-      not_numbered: true
-    - title: Hyperparameter optimization
-      url: /tips/modeling/hyperparameter-optimization
-      not_numbered: true
-  - title: 可視化
-    url: /tips/visualization/readme
-    not_numbered: true
-    subsections:
-    - title: ggplot2
-      url: /tips/visualization/ggplot2
-      not_numbered: true
-  - title: RとPython
-    url: /tips/r-python-compatible/readme
-    not_numbered: true
-    subsections:
-    - title: tidyverse vs pandas
-      url: /tips/r-python-compatible/tidyverse-pandas
-      not_numbered: true
+      #  - title: tidy preprocess
+      #    url: /tips/preprocess/readme
+      #    not_numbered: true
+      #    subsections:
+      #    - title: tidyr
+      #      url: /tips/preprocess/tidyr
+      #      not_numbered: true
+      #    - title: purrr
+      #      url: /tips/preprocess/purrr
+      #      not_numbered: true
+      #  - title: tidy modeling
+      #    url: /tips/modeling/readme
+      #    not_numbered: true
+      #    subsections:
+      #    - title: rsample
+      #      url: /tips/modeling/rsample
+      #      not_numbered: true
+      #    - title: recipes
+      #      url: /tips/modeling/recipes
+      #      not_numbered: true
+      #    - title: parsnip
+      #      url: /tips/modeling/parsnip
+      #      not_numbered: true
+      #    - title: yardstick
+      #      url: /tips/modeling/yardstick
+      #      not_numbered: true
+      #    - title: Cross validation
+      #      url: /tips/modeling/cv
+      #      not_numbered: true
+      #    - title: Hyperparameter optimization
+      #      url: /tips/modeling/hyperparameter-optimization
+      #      not_numbered: true
+      #  - title: 可視化
+      #    url: /tips/visualization/readme
+      #    not_numbered: true
+      #    subsections:
+      #    - title: ggplot2
+      #      url: /tips/visualization/ggplot2
+      #      not_numbered: true
+      #  - title: RとPython
+      #    url: /tips/r-python-compatible/readme
+      #    not_numbered: true
+      #    subsections:
+      #    - title: tidyverse vs pandas
+      #      url: /tips/r-python-compatible/tidyverse-pandas
+      #      not_numbered: true
