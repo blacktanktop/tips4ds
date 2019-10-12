@@ -1,0 +1,122 @@
+---
+redirect_from:
+  - "/analysis/basic-engineering-skills"
+interact_link: content/analysis/basic_engineering_skills.ipynb
+kernel_name: python3
+has_widgets: false
+title: |-
+  データエンジニアリング
+prev_page:
+  url: /analysis/data-analysis-flow.html
+  title: |-
+    データ分析
+next_page:
+  url: /tips/readme.html
+  title: |-
+    技術的なTips
+comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
+---
+<main class="jupyter-page">
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#12487;&#12540;&#12479;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;">&#12487;&#12540;&#12479;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;<a class="anchor-link" href="#&#12487;&#12540;&#12479;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;"> </a></h1><h2 id="&#36523;&#12395;&#12388;&#12369;&#12390;&#12362;&#12367;&#12409;&#12365;&#30693;&#35672;&#12539;&#12473;&#12461;&#12523;">&#36523;&#12395;&#12388;&#12369;&#12390;&#12362;&#12367;&#12409;&#12365;&#30693;&#35672;&#12539;&#12473;&#12461;&#12523;<a class="anchor-link" href="#&#36523;&#12395;&#12388;&#12369;&#12390;&#12362;&#12367;&#12409;&#12365;&#30693;&#35672;&#12539;&#12473;&#12461;&#12523;"> </a></h2><p>データエンジニアリングの項目で、注目されるものは、収集・整理・変形・特徴量エンジニアリングや多変量解析・機械学習のコーディングで、最近では書籍も非常に多いことや、Colabなどの計算環境が用意されている事なども影響して、これらのスキルについてはある程度身につけやすいものと考えています。表にすると、</p>
+<table>
+<thead><tr>
+<th style="text-align:center">項目</th>
+<th style="text-align:left">スキル</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">収集</td>
+<td style="text-align:left">SQL</td>
+</tr>
+<tr>
+<td style="text-align:center">可視化</td>
+<td style="text-align:left">ggplot2<br>matplotlib</td>
+</tr>
+<tr>
+<td style="text-align:center">整理・変形・特徴量エンジニアリング</td>
+<td style="text-align:left">SQL<br>tidyverse<br>pandas</td>
+</tr>
+<tr>
+<td style="text-align:center">多変量解析・機械学習</td>
+<td style="text-align:left">Rの基本関数や各種パッケージ<br>scikit-learn</td>
+</tr>
+</tbody>
+</table>
+<p>などが例として考えられます。　
+これら全般を扱ったもの<sup class="footnote-ref" id="fnref-3"><a href="#fn-3">1</a></sup>、
+収集・整理・変形などの前処理<sup class="footnote-ref" id="fnref-4"><a href="#fn-4">2</a></sup>、可視化<sup class="footnote-ref" id="fnref-5"><a href="#fn-5">3</a></sup>、特徴量エンジニアリング<sup class="footnote-ref" id="fnref-6"><a href="#fn-6">4</a></sup>、多変量解析、機械学習<sup class="footnote-ref" id="fnref-7"><a href="#fn-7">5</a></sup>など、これらについてもすでによくまとまっているものがあります。それらをよく読み込んで、実際に動かしてみる事が非常に重要です。一度もコーディングしていないのと、コーディングしているのとでは、どんなデータ形式が入力として与えればいいのか、出力の意味は何かということだけでなく、コーディングにかかる時間やオプションの調査などを含めて、時間感覚を掴んでおく事もできるからです。</p>
+<p>さて、データエンジニアリングに必要な知識・スキルにあげた内容だけで十分でしょうか？</p>
+<p>次節で、本書で重点を置きたい、基本的なエンジニアスキルについてまとめたいと思います。</p>
+<h2 id="&#22522;&#26412;&#30340;&#12394;&#12456;&#12531;&#12472;&#12491;&#12450;&#12473;&#12461;&#12523;">&#22522;&#26412;&#30340;&#12394;&#12456;&#12531;&#12472;&#12491;&#12450;&#12473;&#12461;&#12523;<a class="anchor-link" href="#&#22522;&#26412;&#30340;&#12394;&#12456;&#12531;&#12472;&#12491;&#12450;&#12473;&#12461;&#12523;"> </a></h2><p>さて、データエンジニアリングに必要な知識・スキルにあげた内容だけで十分でしょうか？
+先ほど、データ分析のフェーズとデータサイエンティストの３要素に対する知識・スキルの表をまとめました。
+そこから、データエンジニアリングの部分だけ抽出し、さらにどのような技術にそれらが支えられているかをまとめてみましょう</p>
+<table>
+<thead><tr>
+<th style="text-align:center"></th>
+<th style="text-align:left">ビジネス理解</th>
+<th style="text-align:left">データ理解・準備</th>
+<th style="text-align:left">モデリング</th>
+<th style="text-align:left">評価</th>
+<th style="text-align:left">展開</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">データエンジニアリング<br>（コーディング力）</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">収集<br>可視化<br>整理・変形などの前処理<br>特徴量エンジニアリング <br></td>
+<td style="text-align:left">多変量解析<br>機械学習</td>
+<td style="text-align:left">可視化</td>
+<td style="text-align:left">システムへの組み込み</td>
+</tr>
+<tr>
+<td style="text-align:center">データエンジニアリング<br>（基礎力）</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"><strong>Linuxの基本知識</strong><br><strong>環境構築</strong><br><strong>再現性の担保</strong></td>
+<td style="text-align:left"><strong>Linuxの基本知識</strong><br><strong>環境構築</strong><br><strong>再現性の担保</strong></td>
+<td style="text-align:left"><strong>Linuxの基本知識</strong><br><strong>環境構築</strong><br><strong>再現性の担保</strong></td>
+<td style="text-align:left"><strong>Linuxの基本知識</strong><br><strong>環境構築</strong><br><strong>再現性の担保</strong></td>
+</tr>
+</tbody>
+</table>
+<p>(markdownの表でセルの結合がうまくできないため冗長になっています...)</p>
+<p>上にあげたような、注目されている、エンジニアリングスキルというのは、主に、以下の３つの下支えが必要であるという認識です。</p>
+<ul>
+<li><strong>Linuxの基本知識</strong></li>
+<li><strong>環境構築</strong></li>
+<li><strong>再現性の担保</strong></li>
+</ul>
+<p>エンジニアからデータ分析を扱うようになった方はLinuxの基本知識や環境構築についてはおそらく問題がないかと思います。最近はエンジニア出身者ではなく、モデリングを学んでからデータ分析を扱うようになった方が多いと思います。書籍などでもとりあえずAnaconda入れてjupyter notebookと打って、<a href="http://localhost:8888">http://localhost:8888</a> とブラウザから分析して下さいとかGoogle Colaboratoryを使いましょうとなっています。それでも、データ理解・準備、モデリング、評価まではできるのである程度は問題ないですが、企業でデータ分析をする際には以下のような前提がありえます。</p>
+<ul>
+<li>ビジネスで利用しているシステムに組み込む前提がある場合</li>
+<li>データ量がローカルのPCでは取り扱えない場合</li>
+</ul>
+<p>システムに組み込む事が前提であると、オンプレかクラウドなりのサーバーを使うことになります。データ量がGBどころかTB以上のデータを扱う場合も同様です。
+サーバーでは、ローカルのPCとは異なり、画面がありません。コマンドのみで作業することになります。また、分析環境も自分で作る必要があります。これらが、Linuxの基本知識や環境構築の知識・スキルが必要であると言っている理由の一つになります。
+そのため、それらの知識なしに分析環境が手に入れられるのがSagemakerであったり、AI Notebooksだったりするわけです。
+ですが、本書ではあくまでも基本をおさえる事を目的とします。基本をおさえた上で、自分でもできる、便利なツールも使える、どちらを選ぶかを状況に合わせて考えられるようになって欲しいと思います。</p>
+<h2 id="&#20998;&#26512;&#12395;&#12362;&#12369;&#12427;&#20877;&#29694;&#24615;&#12398;&#37325;&#35201;&#24615;&#12395;&#12388;&#12356;&#12390;">&#20998;&#26512;&#12395;&#12362;&#12369;&#12427;&#20877;&#29694;&#24615;&#12398;&#37325;&#35201;&#24615;&#12395;&#12388;&#12356;&#12390;<a class="anchor-link" href="#&#20998;&#26512;&#12395;&#12362;&#12369;&#12427;&#20877;&#29694;&#24615;&#12398;&#37325;&#35201;&#24615;&#12395;&#12388;&#12356;&#12390;"> </a></h2><p>再現性とは何でしょうか？</p>
+<div class="footnotes">
+<hr>
+<ol><li id="fn-3"><p>塚本邦尊 山田典一他 「東京大学のデータサイエンティスト育成講座 ~Pythonで手を動かして学ぶデ―タ分析~」 2019<br>松村 優哉, 湯谷 啓明他 RユーザのためのRStudio[実践]入門−tidyverseによるモダンな分析フローの世界− 技術評論社 2018<br>Jake VanderPlas 、 菊池 彰 Pythonデータサイエンスハンドブック ―Jupyter、NumPy、pandas、Matplotlib、scikit-learnを使ったデータ分析、機械学習 オライリー・ジャパン 2018<a href="#fnref-3" class="footnote">&#8617;</a></p></li>
+<li id="fn-4"><p>本橋 智光 前処理大全[データ分析のためのSQL/R/Python実践テクニック] 技術評論社 2018<br>中山清喬 飯田理恵子他 「スッキリわかるSQL入門 第2版 ドリル222問付き! (スッキリシリーズ)」 インプレス 2018<br>Hadley Wickham , Garrett Grolemund他 Rではじめるデータサイエンス オライリー・ジャパン 2017<br>Wes McKinney, 瀬戸山 雅人 他 Pythonによるデータ分析入門 第2版 ―NumPy、pandasを使ったデータ処理 オライリー・ジャパン 2018<a href="#fnref-4" class="footnote">&#8617;</a></p></li>
+<li id="fn-5"><p>Winston Chang, 石井 弓美子他 Rグラフィックスクックブック ―ggplot2によるグラフ作成のレシピ集 オライリー・ジャパン 2013<br>From Data to Viz : <a href="https://www.data-to-viz.com/">https://www.data-to-viz.com/</a><a href="#fnref-5" class="footnote">&#8617;</a></p></li>
+<li id="fn-6"><p>Alice Zheng, Amanda Casari他 「機械学習のための特徴量エンジニアリング ―その原理とPythonによる実践」 オライリー・ジャパン 2019<a href="#fnref-6" class="footnote">&#8617;</a></p></li>
+<li id="fn-7"><p>Rサポーターズ, 安部 晃生他 「パーフェクトR」 技術評論社 2017<br>Sebastian Raschka , Vahid Mirjalili他 <br>[第2版]Python 機械学習プログラミング 達人データサイエンティストによる理論と実践 (impress top gear) インプレス 2018<br>門脇 大輔 , 阪田 隆司他 「Kaggleで勝つデータ分析の技術」 技術評論社 2019<a href="#fnref-7" class="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+ 
+
+
+</main>
